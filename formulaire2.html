@@ -1,45 +1,33 @@
 
-﻿<html>
+<html>
 <head>
 
 
 </head>
 <body>
-	<h1>Mon formulaire</h1>
-
+	<h1>Dresseur de pokémon</h1>
+	<p>Les champs marqués d'une * sont obligatoires.</p>
 <form action="#">
 <fieldset>
-<legend>Votre Nom et Prénom</legend>
-<p>Nom : <input name="A" type="Text" value="Nom ?"/></p>
-<p>Prénom : <input name="B" type="Text" value="Prénom ?"/></p>
-</fieldset>
-<p>Mr <input name="C" type="radio" value="Mr"/> 
-Mme<input name="C" type="radio" value="Mme"/></p>
-<p>
-Chien <input name="D" type="checkbox" value="Chien"/>
-Chat <input name="E" type="checkbox" value="Chat"/>
-Poisson <input name="F" type="checkbox" value="Poisson"/>
-</p>
-<p>
-<select name="G" multiple>
-	<option>Pain</option>
-	<option>Citron</option>
-	<option>Orange</option>
-</select>
-</p>
-<p>
-<textarea rows="3" cols="30	" name="H">
-Laisez nous un commentaire
+<legend>Nouveau dresseur</legend>
+<p>Nom * <br><input name="A" type="Text" required/></p>
+<p>Description<br>
+<textarea rows="3" cols="20">
 </textarea>
+</p>
 
+<p>Équipe<br><input name="C" type="radio" value="Mr"/> 
+Rouge<br> <input name="C" type="radio" value="Mr"/> 
+Jaune<br> <input name="C" type="radio" value="Mr"/> 
+Bleu</p>
+<p>Anniversaire * <br><input name="A" type="Text" value="jj/mm/aaaa" required patern = "[0-9]{2}[/][0-9]{2}[/][0-9]{4}"/></p>
 </p>
 <p><input type="submit" value="Envoyer" />
-<input type="reset"/>
 </p>
 
 
 </form>
-
+</fieldset>
 </body>
 </html>
 
